@@ -16,8 +16,8 @@ button {
    background: #f3e6e6;
    color: #000000;
    border: none;
+   cursor: pointer;
 }
- 
 a {
    text-decoration: none;
    color: #000000;
@@ -96,10 +96,16 @@ a {
     align-items: center;
 }
 .hero-content-bottom__button{
+    transition: all .3s;
     padding: 15px 30px 15px 30px;
     background: #000000;
     color: white;
     font-size: 16px;
+    border: 2px solid black;
+}
+.hero-content-bottom__button:hover{
+    background: white;
+    color: black;
 }
 .hero-content-bottom__line{
     width: 100px;
@@ -162,8 +168,12 @@ a {
     padding: 15px 20px;
     border: 1px solid #000;
     background: white;
+    transition: all .3s;
 }
-
+.services-content-card__button:hover{
+    background: black;
+    color: white;
+}
 /* services */
 
 /* people */
@@ -188,7 +198,41 @@ a {
 }
 .people-content__img{
     width: 515px;
-    height: 380px;
+    height: 380px;  
+}
+.people-content-img{
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+}
+.people-content-img::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: all .3s;
+}
+.people-content-img:hover.people-content-img::before{
+    opacity: 1;
+}
+.people-content-img:hover .people-content-info{
+    margin-top: -150px;
+}
+.people-content-info{
+    transition: all .3s;
+    text-align: center;
+    font-size: 18px;
+    color: #fbfbfb;
+    position: relative;
+    z-index: 1;
+}
+.people-content-info__name{
+    margin-bottom: 15px;
+    font-size: 24px;
 }
 .people__title::after{
     content: '';
@@ -257,7 +301,133 @@ a {
     background: white;
     border: 1px solid #000;
     font-weight: bold;
+    transition: all .3s;
+}
+.price-content-price-services__button:hover{
+    background: black;
+    color: white;
 }
 .price-content__img{
     width: 700px;
+}
+
+/* price */
+
+/* feedback */
+
+.feedback{
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.feedback-title{
+    text-align: center;
+    font-size: 38px;
+}
+.feedback-content{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.feedback-content-one{
+    max-width: 500px;
+    margin: 50px;
+}
+.feedback-content-one__name{
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+.feedback-content-one__img{
+    width: 100%;
+    height: 400px;
+}
+.feedback-content-one__text{
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.feedback-content-two{
+    max-width: 500px;
+    margin: 50px;
+}
+.feedback-content-two__img{
+    width: 100%;
+    height: 400px;
+}
+.feedback-content-two__name{
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+.feedback-content-two__text{
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.feedback-content__arrow--left{
+    position: absolute;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.feedback-content__arrow--right{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.feedback__button{
+    padding: 15px 30px;
+    background: white;
+    border: 1px solid #000;
+    font-weight: bold;
+    transition: all .3s;
+}
+.feedback__button:hover{
+    background: black;
+    color: white;
+}
+.feedback-button{
+    display: flex;
+    justify-content: center;
+}
+
+/* feedback */
+
+/* info */
+
+.info{
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.info-title{
+    font-size: 38px;
+    text-align: center;
+}
+.info-content{
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+}
+.info-content__img{
+    max-width: 800px;
+}
+.info-content-text-desc{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin: 30px;
+}
+.info-content-text-desc__line{
+    height: 2px;
+    width: 90px;
+    background: black;
+    margin-bottom: 15px;
+}
+.info-content-text-desc__content{
+    max-width: 400px;
+    font-size: 22px;
+}
+.info-content-text-desc__line--two{
+    margin-left: 300px;
+    margin-top: 15px;
+    height: 2px;
 }
