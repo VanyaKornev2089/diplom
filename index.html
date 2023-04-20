@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="./js/main.js" defer></script>
     <title>ГарантБьюти</title>
 </head>
 <body>
@@ -48,7 +49,7 @@
             <div class="container">
                 <h2 class="services__title">УСЛУГИ</h2>
                 <div class="services-links">
-                    <a href="#" class="services-links__item">ПАРИКАХЕРСКАЯ</a>
+                    <a href="#" class="services-links__item">ПАРИКМАХЕРСКАЯ</a>
                     <a href="#" class="services-links__item">МАНИКЮР</a>
                     <a href="#" class="services-links__item">КОСМЕТОЛОГИЯ</a>
                     <a href="#" class="services-links__item">МАЙКАП</a>
@@ -139,7 +140,7 @@
                     <div class="feedback-content-two">
                         <img src="./img/feedb.jpg" alt="girl" class="feedback-content-two__img">
                         <h3 class="feedback-content-two__name">Ольга</h3>
-                        <p class="feedback-content-two__text">Всем рекомендую!!! Мастер своего дела!!! Записывайтесь, не пожалеете!!!</p>
+                        <p class="feedback-content-two__text">Удивила невысокая цена, массаж отличный, все понравилось! Рекомендую!</p>
                     </div>
                     <img src="./img/left.png" alt="left" class="feedback-content__arrow--left">
                     <img src="./img/right.png" alt="left" class="feedback-content__arrow--right">
@@ -167,6 +168,51 @@
                 </div>
             </div>
         </section>
+        <section class="form">
+            <div class="container">
+                <div class="form-content">
+                    <img src="./img/face.jpg" alt="face" class="form-content__img">
+                    <div class="form-column">
+                        <div class="form-content-text">
+                            <h2 class="form-content-text__title">Скидка 20% новым клиентам</h2>
+                            <p class="form-content-text__desc">Заполните форму и мы свяжемся с вами в течении 20 минут</p>
+                        </div>
+                        <form action="#" class="form-content-form">
+                            <input type="text" class="form-content-form__input" placeholder="Имя">
+                            <input type="tel" class="form-content-form__input" placeholder="Телефон">
+                            <div class="form-content-form-group">
+                                <input type="checkbox" id="form_checkbox" class="form-content-form__checkbox" checked>
+                                <label for="form_checkbox" class="form-content-form__text">я принимаю условия обработки персональных данных</label>
+                            </div>
+                            <input type="submit" class="form-content-form__button">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="modal">
+            <div class="modal-wrapper">
+                <form action="#" class="modal-form">
+                    <input type="text" class="modal-form__input" placeholder="Имя">
+                    <textarea name="modal_comment"class="modal-form__input modal-form__textarea" placeholder="Ваш отзыв"></textarea>
+                    <input type="submit" class="modal-form__button">
+                </form>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="header-content footer-content">
+                <div class="header-nav footer-nav">
+                    <a href="#" class="header-nav__item">О нас</a>
+                    <a href="#" class="header-nav__item">Услуги</a>
+                    <a href="#" class="header-nav__item">Отзывы</a>
+                    <a href="#" class="header-nav__item">Мастера</a>
+                    <a href="#" class="header-nav__item">Контакты</a>
+                </div>
+                <p class="footer-content__number">+7-985-820-66-43</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

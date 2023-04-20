@@ -431,3 +431,150 @@ a {
     margin-top: 15px;
     height: 2px;
 }
+
+/* info */
+
+/* form */
+
+.form{
+    padding-top: 150px;
+    padding-bottom: 80px;
+}
+.form-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.form-content__img{
+    height: 700px;
+}
+.form-content-text__title{
+    font-size: 28px;
+    max-width: 270px;
+    margin-bottom: 30px;
+}
+.form-content-text__desc{
+    font-size: 20px;
+    max-width: 360px;
+}
+.form-content-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.form-column{
+    display: flex;
+    flex-direction: column;
+}
+.form-content-form__input{
+    max-width: 300px;
+    border: none;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+    height: 30px;
+    text-indent: 10px;
+}
+.form-content-form__input:last-of-type{
+    margin: 0;
+}
+.form-content-form__text{
+    font-size: 12px;
+    color: rgb(193, 193, 193);
+    max-width: 210px;
+    margin-left: 15px;
+}
+.form-content-form-group{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.form-content-form__checkbox{
+    width: 17px;
+    height: 17px;
+}
+.form-content-form__button{
+    max-width: 200px;
+    padding: 10px 20px 10px 20px;
+    background: white;
+    border: 1px solid #000;
+    font-weight: bold;
+    transition: all .3s;
+}
+.form-content-form__button:hover{
+    background: black;
+    color: white;
+}
+
+/* form */
+
+/* footer */
+
+.footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid #000;
+}
+
+.footer-nav{
+    border: none;
+}
+
+/* footer */
+
+/* modal */
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.modal.active{
+    display: block;
+}
+.modal-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modal-wrapper{
+    background: #ffffff;
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    top:  calc(50% - 100px);
+    left: calc(50% - 230px);
+    position: absolute;
+    border-radius: 15px;
+}
+.modal-form__input{
+    max-width: 400px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+    height: 30px;
+    text-indent: 10px;
+}
+.modal-form__button{
+    max-width: 200px;
+    padding: 10px 20px 10px 20px;
+    background: white;
+    border: 1px solid #000;
+    font-weight: bold;
+    transition: all .3s;
+}
+.modal-form__button:hover{
+    background: black;
+    color: white;
+}
+.modal-form__textarea{
+    max-width: 400px;
+    width: 100%;
+    height: 50px;
+    resize: none;
+}
