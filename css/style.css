@@ -5,6 +5,7 @@
   
 html {
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
  
 .container {
@@ -21,7 +22,7 @@ button {
 a {
    text-decoration: none;
    color: #000000;
-   font-size: 25px;
+   /* font-size: 25px; */
 }
 
 /* settings */
@@ -43,9 +44,13 @@ a {
 .header-nav__item{
     margin-right: 30px;
     font-size: 16px;
+    transition: all .3s;
 }
 .header-nav__item:last-child{
     margin: 0;
+}
+.header-nav__item:hover{
+    color: #b3b3b3;
 }
 /* header */
 
@@ -154,7 +159,9 @@ a {
     align-items: center;
 }
 .services-content-card__img{
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
+    max-height: 500px;
 }
 .services-content-card__title{
     margin-top: 30px;
@@ -578,3 +585,98 @@ a {
     height: 50px;
     resize: none;
 }
+
+/* modal */
+
+/* pages two. Header */
+
+/* header */
+.day{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.header-content__title{
+    font-size: 40px;
+    font-weight: normal;
+    border-bottom: 2px solid #000;
+}
+.day-content{
+    display: flex;
+    flex-direction: column;
+}
+.day-content__title{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.day-content__text{
+    margin-bottom: 30px;
+    font-size: 20px;
+    max-width: 700px;
+}
+.day-content__button{
+    max-width: 200px;
+    padding: 10px 15px 10px 15px;
+    background: white;
+    color: #000;
+    border: 2px solid black;
+    transition: all .3s;
+}
+.day-content__button:hover{
+    color: white;
+    background: black;
+}
+.day-full{
+    display: flex;
+    align-items: center;
+}
+.day-full__img{
+    max-width: 600px;
+    width: 100%;
+    max-height: 500px;
+}
+
+/* day */
+
+/* price */
+
+.day-price{
+    padding-top: 20px;
+}
+.day-price__title{
+    font-size: 40px;
+    font-weight: normal;
+}
+.day-price-content{
+    display: flex;
+    flex-direction: column;
+}
+.day-price-content-item{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.day-price-content-item__text{
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+    max-width: 265px;
+    padding-bottom: 10px;
+}
+.day-price-content-item__text:last-child{
+    margin: 0;
+}
+
+/* evening */
+
+.evening-full__img{
+    height: 500px;
+}
+
+/* wedding */
+
+/* .wedding-full__img{
+    width: 400px;
+    margin-left: 30px;
+} */
