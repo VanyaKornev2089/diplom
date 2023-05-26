@@ -241,24 +241,6 @@ a {
     margin-bottom: 15px;
     font-size: 24px;
 }
-.people__title::after{
-    content: '';
-    position: absolute;
-    top: 295px;
-    left: -50px;
-    width: 40px;
-    height: 40px;
-    background: url('../img/left.png') no-repeat center / cover;
-}
-.people__title::before{
-    content: '';
-    position: absolute;
-    top: 295px;
-    right: -50px;
-    width: 40px;
-    height: 40px;
-    background: url('../img/right.png') no-repeat center / cover;
-}
 
 /* people */
 
@@ -337,41 +319,43 @@ a {
     align-items: center;
     position: relative;
 }
-.feedback-content-one{
+/* .feedback-content{
     max-width: 500px;
     margin: 50px;
 }
-.feedback-content-one__name{
-    margin-top: 15px;
-    text-transform: uppercase;
-}
-.feedback-content-one__img{
+.feedback-content__img{
     width: 100%;
     height: 400px;
 }
-.feedback-content-one__text{
-    text-transform: uppercase;
-    margin-top: 20px;
-}
-.feedback-content-two{
-    max-width: 500px;
-    margin: 50px;
-}
-.feedback-content-two__img{
-    width: 100%;
-    height: 400px;
-}
-.feedback-content-two__name{
+.feedback-content__name{
     margin-top: 15px;
     text-transform: uppercase;
 }
-.feedback-content-two__text{
+.feedback-content__text{
     text-transform: uppercase;
     margin-top: 20px;
+} */
+.feedback-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.feedback-content-item{
+    max-width: 400px;
+    width: 100%;
+}
+.feedback-content__img{
+    max-width: 400px;
+    width: 100%;
+    height: 400px;
+    border-radius: 25px;
+}
+.feedback-slider-arrows{
+    display: flex;
+    justify-content: center;
 }
 .feedback-content__arrow--left{
-    position: absolute;
-    left: 0;
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -380,6 +364,7 @@ a {
     width: 40px;
     height: 40px;
     cursor: pointer;
+    margin-left: 25px;
 }
 .feedback__button{
     padding: 15px 30px;
@@ -387,6 +372,7 @@ a {
     border: 1px solid #000;
     font-weight: bold;
     transition: all .3s;
+    margin-top: 25px;
 }
 .feedback__button:hover{
     background: black;
